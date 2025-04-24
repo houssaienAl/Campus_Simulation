@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane prefHeight="726.0" prefWidth="401.0" style="-fx-background-size: cover; -fx-background-position: center center;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_campus.HomeController">
+
+    <VBox alignment="CENTER" maxWidth="606.0" prefHeight="386.0" prefWidth="401.0" spacing="10">
+        <!-- correct way to set padding via Insets -->
+        <padding>
+            <Insets bottom="20" left="20" right="20" top="20" />
+        </padding>
+      <ImageView fitHeight="345.0" fitWidth="483.0" pickOnBounds="true" preserveRatio="true">
+      </ImageView>
+
+        <Label style="-fx-font-size:18;" text="Campus Simulator Login" />
+
+        <TextField fx:id="usernameField" onAction="#onLogin" promptText="Username" />
+
+        <PasswordField fx:id="passwordField" onAction="#onLogin" promptText="Password" />
+
+        <HBox alignment="CENTER" spacing="10">
+            <Button fx:id="loginButton" defaultButton="true" onAction="#onLogin" text="Login" />
+            <Button onAction="#onRegister" text="Register" />
+        </HBox>
+
+        <Label fx:id="statusLabel" textFill="red" />
+    </VBox>
+</StackPane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.projet_campus.SimulationController">
+
+    <top>
+        <ToolBar>
+            <MenuButton text="Actions">
+                <items>
+                    <MenuItem text="Trigger Random Event" onAction="#handleTriggerEvent"/>
+                    <MenuItem text="Add Student"          onAction="#handleAddStudent"/>
+                    <MenuItem text="Add Professor"        onAction="#handleAddProfessor"/>
+                    <SeparatorMenuItem/>
+                    <MenuItem text="Add Library"          onAction="#handleAddLibrary"/>
+                    <MenuItem text="Add Classroom"        onAction="#handleAddClassroom"/>
+                    <MenuItem text="Add Cafeteria"        onAction="#handleAddCafeteria"/>
+                    <MenuItem text="Add Laboratory"       onAction="#handleAddLaboratory"/>
+                    <MenuItem text="Add Custom"           onAction="#handleAddCustomBuilding"/>
+                    <SeparatorMenuItem/>
+                    <MenuItem text="Edit Person"          onAction="#handleEditPerson"/>
+                    <MenuItem text="Delete Person"        onAction="#handleDeletePerson"/>
+                    <MenuItem text="Edit Building"        onAction="#handleEditBuilding"/>
+                    <MenuItem text="Delete Building"      onAction="#handleDeleteBuilding"/>
+                    <SeparatorMenuItem/>
+                    <MenuItem text="Export Report"        onAction="#handleExportPdf"/>
+                    <SeparatorMenuItem/>
+                    <MenuItem text="Show All"             onAction="#handleShowAll"/>
+                </items>
+            </MenuButton>
+        </ToolBar>
+    </top>
+
+    <center>
+        <Pane fx:id="simulationPane"/>
+    </center>
+
+    <bottom>
+        <VBox spacing="10" alignment="CENTER">
+            <HBox spacing="20" alignment="CENTER">
+                <VBox alignment="CENTER">
+                    <Label text="Satisfaction"/>
+                    <ProgressBar fx:id="satisfactionBar" prefWidth="200"/>
+                </VBox>
+                <VBox alignment="CENTER">
+                    <Label text="WiFi Usage"/>
+                    <ProgressBar fx:id="wifiBar" prefWidth="200"/>
+                </VBox>
+                <VBox alignment="CENTER">
+                    <Label text="Electricity Usage"/>
+                    <ProgressBar fx:id="electricityBar" prefWidth="200"/>
+                </VBox>
+            </HBox>
+            <HBox spacing="20" alignment="CENTER">
+                <VBox alignment="CENTER">
+                    <Label text="Water Usage"/>
+                    <ProgressBar fx:id="waterBar" prefWidth="200"/>
+                </VBox>
+                <VBox alignment="CENTER">
+                    <Label text="Space Usage"/>
+                    <ProgressBar fx:id="spaceBar" prefWidth="200"/>
+                </VBox>
+            </HBox>
+        </VBox>
+    </bottom>
+
+</BorderPane>

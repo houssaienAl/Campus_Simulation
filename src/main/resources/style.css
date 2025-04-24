@@ -1,0 +1,45 @@
+.button {
+    -fx-font-size: 16px;
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 10;
+}
+
+.text {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-fill: #333;
+}
+
+.vbox {
+    -fx-background-color: white;
+    -fx-padding: 40;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 4);
+}
+
+.stack-pane {
+    -fx-background-color: linear-gradient(to bottom, #e0eafc, #cfdef3);
+}
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color: #f0f4f8;
+}
+
+.tool-bar {
+    -fx-background-color: #2e86de;
+    -fx-spacing: 10;
+}
+
+.button {
+    -fx-background-color: #74b9ff;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.label {
+    -fx-font-weight: bold;
+}
+/* login.css */
+
